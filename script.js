@@ -9,7 +9,8 @@ document.querySelectorAll("form").forEach((form) => {
       form.appendChild(message);
     }
 
-    message.textContent = "접수 화면 시안입니다. 실제 운영 시 전화, 이메일, 카카오채널 또는 서버 폼으로 연결하세요.";
+    const label = form.dataset.message || "임시 화면입니다. 실제 개발에서는 Supabase 테이블 저장, 파일 업로드, 알림 발송과 연결하면 됩니다.";
+    message.textContent = label;
     message.classList.add("show");
   });
 });

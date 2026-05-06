@@ -1,80 +1,23 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>과정 신청 | 광주컴퓨터기술학원</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>수강 신청 | 광주 IT 직업훈련학교</title><link rel="stylesheet" href="styles.css"></head>
 <body>
-  <header class="site-header">
-    <nav class="nav" aria-label="주요 메뉴">
-      <a class="logo" href="index.html">광주컴퓨터기술학원<span>ITGWANGJU</span></a>
-      <ul class="menu">
-        <li><a href="index.html">홈</a></li>
-        <li><a href="courses.html">모집 과정</a></li>
-        <li><a href="reviews.html">후기·프로젝트</a></li>
-        <li><a href="consult.html">상담 신청</a></li>
-      </ul>
-      <a class="nav-cta" href="apply.html">과정 신청</a>
-    </nav>
-  </header>
-
+  <header class="site-header"><nav class="nav"><a class="logo" href="index.html">광주 IT 직업훈련학교<span>ITGWANGJU</span></a><ul class="menu"><li><a href="index.html">홈</a></li><li><a href="courses.html">모집과정</a></li><li><a href="notices.html">공지사항</a></li><li><a href="posts.html">게시판</a></li><li><a href="consult.html">문의</a></li><li><a href="admin.html">관리자</a></li></ul><a class="button primary active" href="apply.html">수강 신청</a></nav></header>
   <main>
-    <section class="page-hero courses">
-      <div class="container page-title">
-        <p class="eyebrow">Apply</p>
-        <h1>과정 신청</h1>
-        <p>관심 과정을 남겨주시면 확인 후 안내 연락을 드리는 정적 페이지용 신청 화면입니다.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container detail-layout">
-        <form class="panel form" action="#" method="post">
-          <div class="field">
-            <label for="course">신청 과정</label>
-            <select id="course" name="course">
-              <option>AI 위치기반 앱 개발자 양성</option>
-              <option>웹 풀스택 개발 기초</option>
-              <option>컴퓨터활용능력·ITQ</option>
-              <option>상담 후 결정</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="name">이름</label>
-            <input id="name" name="name" type="text" placeholder="홍길동">
-          </div>
-          <div class="field">
-            <label for="phone">연락처</label>
-            <input id="phone" name="phone" type="tel" placeholder="010-0000-0000">
-          </div>
-          <div class="field">
-            <label for="message">궁금한 내용</label>
-            <textarea id="message" name="message" placeholder="수강 가능 시간, 국비지원 여부, 진로 고민 등을 적어주세요."></textarea>
-          </div>
-          <button class="button primary" type="submit">신청 내용 보내기</button>
-        </form>
-
-        <aside class="panel">
-          <h2>빠른 안내</h2>
-          <p class="notice">이 페이지는 정적 HTML 시안입니다. 실제 접수 기능은 서버, 폼 서비스, 카카오채널, 이메일 연동 중 하나로 연결하면 됩니다.</p>
-          <div class="meta">
-            <span>전화: 062-413-1600</span>
-            <span>이메일: itgwangju@gmail.com</span>
-            <span>방문: 광주 광산구 사암로340번길 31 부광빌딩 5층</span>
-          </div>
-        </aside>
-      </div>
-    </section>
+    <section class="page-hero"><div class="container page-title"><p class="eyebrow">t_enrollments · t_apply</p><h1>수강 신청</h1><p>어떤 과정의 어떤 기수에 신청했는지와 신청서 상세 내용을 나누어 저장하기 위한 화면입니다.</p></div></section>
+    <section class="section"><div class="container split">
+      <form class="panel form" data-message="신청서 임시 접수 완료. 실제 개발에서는 t_enrollments와 t_apply에 저장합니다.">
+        <div class="field"><label for="course">신청 과정</label><select id="course"><option>웹디자인 기능사 실무반 - 2026년 6월 개강반</option><option>컴퓨터활용능력 2급 - 2026년 7월 오전반</option><option>영상편집 입문 - 주말 4주반</option></select></div>
+        <div class="grid two"><div class="field"><label for="name">이름</label><input id="name" placeholder="홍길동"></div><div class="field"><label for="birth">생년월일</label><input id="birth" placeholder="1999-01-01"></div></div>
+        <div class="grid two"><div class="field"><label for="phone">연락처</label><input id="phone" placeholder="010-0000-0000"></div><div class="field"><label for="email">이메일</label><input id="email" placeholder="name@example.com"></div></div>
+        <div class="field"><label for="address">주소</label><input id="address" placeholder="광주광역시 ..."></div>
+        <div class="field"><label for="memo">신청 내용</label><textarea id="memo" placeholder="상담 희망 시간, 현재 수준, 궁금한 점을 적어주세요."></textarea></div>
+        <button class="button primary" type="submit">신청서 제출</button>
+      </form>
+      <aside class="panel"><h3>저장 구조</h3><ul class="list"><li>t_user: 구글 로그인 사용자 기본 정보</li><li>t_enrollments: 사용자, 과정, 기수 신청 기록</li><li>t_apply: 이름, 연락처, 주소, 생년월일 등 상세 신청서</li><li>t_files: 제출 서류 원본</li></ul></aside>
+    </div></section>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div><strong>광주컴퓨터기술학원</strong><br>광주 광산구 사암로340번길 31 부광빌딩 5층</div>
-      <div>교육문의 062-413-1600<br>itgwangju@gmail.com</div>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container"><div><strong>광주 IT 직업훈련학교</strong></div><div><a href="admin-applications.html">관리자 신청서 관리</a></div></div></footer>
   <script src="script.js"></script>
 </body>
 </html>

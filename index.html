@@ -3,37 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>광주컴퓨터기술학원</title>
+  <title>광주 IT 직업훈련학교</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="주요 메뉴">
-      <a class="logo" href="index.html">광주컴퓨터기술학원<span>ITGWANGJU</span></a>
+      <a class="logo" href="index.html">광주 IT 직업훈련학교<span>ITGWANGJU</span></a>
       <ul class="menu">
         <li><a class="active" href="index.html">홈</a></li>
-        <li><a href="courses.html">모집 과정</a></li>
-        <li><a href="reviews.html">후기·프로젝트</a></li>
-        <li><a href="consult.html">상담 신청</a></li>
+        <li><a href="courses.html">모집과정</a></li>
+        <li><a href="notices.html">공지사항</a></li>
+        <li><a href="posts.html">게시판</a></li>
+        <li><a href="consult.html">문의</a></li>
+        <li><a href="admin.html">관리자</a></li>
       </ul>
-      <a class="nav-cta" href="apply.html">과정 신청</a>
+      <a class="button primary" href="apply.html">수강 신청</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-inner">
-        <p class="eyebrow">광주 국비지원 IT 취업 교육</p>
-        <h1>기초부터 포트폴리오까지, 실무 흐름으로 배우는 컴퓨터 교육</h1>
-        <p>프로그래밍, AI, 자격증, 사무자동화까지 목표에 맞는 과정을 쉽게 찾고 바로 상담할 수 있도록 구성했습니다.</p>
+        <p class="eyebrow">국비지원 · 취업준비 · 실무교육</p>
+        <h1>처음 배우는 사람도 바로 찾고 신청할 수 있는 직업훈련학교</h1>
+        <p>과정, 기수, 수강 신청, 문의, 공지와 게시글을 단순한 흐름으로 묶은 정적 HTML 시안입니다. 나중에 Supabase 테이블과 연결하기 쉽게 화면을 나눴습니다.</p>
         <div class="actions">
-          <a class="button primary" href="courses.html">모집 과정 보기</a>
-          <a class="button ghost" href="consult.html">상담 신청</a>
+          <a class="button primary" href="courses.html">모집과정 보기</a>
+          <a class="button ghost" href="consult.html">상담 문의</a>
         </div>
-        <div class="stats" aria-label="학원 주요 정보">
-          <div class="stat"><strong>20년+</strong><span>실무·교육 경력 강사진</span></div>
-          <div class="stat"><strong>1:1</strong><span>진로와 학습 방향 상담</span></div>
-          <div class="stat"><strong>062</strong><span>413-1600 교육 문의</span></div>
+        <div class="stats" aria-label="주요 현황">
+          <div class="stat"><strong>3</strong><span>대표 과정 종류</span></div>
+          <div class="stat"><strong>6월</strong><span>개강 예정 기수</span></div>
+          <div class="stat"><strong>1:1</strong><span>상담 신청 연결</span></div>
+          <div class="stat"><strong>관리자</strong><span>테이블별 관리 화면</span></div>
         </div>
       </div>
     </section>
@@ -43,79 +46,29 @@
         <div class="section-head">
           <div>
             <h2>현재 모집 과정</h2>
-            <p>처음 배우는 분도 따라올 수 있도록 핵심 과정만 선별했습니다.</p>
+            <p>t_courses와 t_course_sessions를 기준으로 사용자가 가장 먼저 보게 될 과정 카드입니다.</p>
           </div>
-          <a class="button light" href="courses.html">전체 보기</a>
+          <a class="button light" href="courses.html">전체 과정</a>
         </div>
         <div class="grid three">
-          <article class="card">
-            <div class="card-body">
-              <span class="badge">국비지원</span>
-              <h3>AI 위치기반 앱 개발자 양성</h3>
-              <p>Python, AI 기초, 앱 개발, 프로젝트 발표까지 이어지는 취업 준비 과정입니다.</p>
-              <div class="meta">
-                <span>기간: 3개월</span>
-                <span>시간: 월-금 09:00-16:00</span>
-              </div>
-              <a class="button light" href="course-detail.html">자세히 보기</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <span class="badge">프로그래밍</span>
-              <h3>웹 풀스택 개발 기초</h3>
-              <p>HTML, CSS, JavaScript부터 백엔드와 데이터베이스 흐름까지 배웁니다.</p>
-              <div class="meta">
-                <span>기간: 2-4개월</span>
-                <span>대상: 입문자·취업준비생</span>
-              </div>
-              <a class="button light" href="course-detail.html">자세히 보기</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <span class="badge">자격증</span>
-              <h3>컴퓨터활용능력·ITQ</h3>
-              <p>실무 문서 작업과 자격증 취득을 함께 준비하는 단기 집중 과정입니다.</p>
-              <div class="meta">
-                <span>기간: 단기 완성</span>
-                <span>대상: 학생·재직자</span>
-              </div>
-              <a class="button light" href="course-detail.html">자세히 보기</a>
-            </div>
-          </article>
+          <article class="card"><div class="card-body"><span class="badge">웹디자인</span><h3>웹디자인 기능사 실무반</h3><p>HTML, CSS, 디자인 툴, 포트폴리오 제작까지 이어지는 입문 과정입니다.</p><div class="meta"><span>2026년 6월 개강반</span><span>평일 09:00-16:00</span></div><a class="button light" href="course-detail.html">상세 보기</a></div></article>
+          <article class="card"><div class="card-body"><span class="badge green">사무자격</span><h3>컴퓨터활용능력 2급</h3><p>엑셀, 데이터 관리, 실기 대비를 짧고 집중적으로 준비합니다.</p><div class="meta"><span>2026년 7월 개강반</span><span>오전반 · 저녁반</span></div><a class="button light" href="course-detail.html">상세 보기</a></div></article>
+          <article class="card"><div class="card-body"><span class="badge orange">영상편집</span><h3>유튜브 영상편집 기초</h3><p>프리미어, 컷 편집, 자막, 썸네일 제작까지 다루는 실습형 과정입니다.</p><div class="meta"><span>상시 모집</span><span>주 3회</span></div><a class="button light" href="course-detail.html">상세 보기</a></div></article>
         </div>
       </div>
     </section>
 
     <section class="section soft">
       <div class="container">
-        <div class="grid two">
-          <div>
-            <h2>수업 이후까지 이어지는 학습 흐름</h2>
-            <p>기초 문법만 배우고 끝나는 수업이 아니라 개인 목표에 맞는 학습 로드맵, 실습, 프로젝트 정리를 함께 진행합니다.</p>
-            <div class="actions">
-              <a class="button dark" href="reviews.html">후기·프로젝트 보기</a>
-            </div>
-          </div>
-          <div class="panel">
-            <ul class="check-list">
-              <li>비전공자를 위한 기초 개념 정리</li>
-              <li>실습 중심 수업과 반복 피드백</li>
-              <li>포트폴리오로 남길 수 있는 결과물 제작</li>
-              <li>취업 방향, 자격증, 진로 상담 연결</li>
-            </ul>
-          </div>
+        <div class="grid three">
+          <article class="panel"><h3>수강 신청</h3><p class="muted">t_enrollments에 신청 기록을 만들고, t_apply에 상세 신청서를 저장하는 흐름입니다.</p><a class="button light" href="apply.html">신청서 열기</a></article>
+          <article class="panel"><h3>공지 확인</h3><p class="muted">개강 안내, 휴무, 서류 안내처럼 공식 알림은 t_notices로 분리합니다.</p><a class="button light" href="notices.html">공지 보기</a></article>
+          <article class="panel"><h3>문의 접수</h3><p class="muted">상담 신청과 질문은 t_inquiries에서 상태별로 관리하는 형태입니다.</p><a class="button light" href="consult.html">문의하기</a></article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div><strong>광주컴퓨터기술학원</strong><br>광주 광산구 사암로340번길 31 부광빌딩 5층</div>
-      <div>교육문의 062-413-1600<br>itgwangju@gmail.com</div>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container"><div><strong>광주 IT 직업훈련학교</strong><br>광주광역시 교육로 100</div><div>교육문의 062-000-0000<br>hello@itgwangju.example</div></div></footer>
 </body>
 </html>
