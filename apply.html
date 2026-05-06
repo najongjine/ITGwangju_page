@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>과정 신청 | 광주컴퓨터기술학원</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="주요 메뉴">
+      <a class="logo" href="index.html">광주컴퓨터기술학원<span>ITGWANGJU</span></a>
+      <ul class="menu">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="courses.html">모집 과정</a></li>
+        <li><a href="reviews.html">후기·프로젝트</a></li>
+        <li><a href="consult.html">상담 신청</a></li>
+      </ul>
+      <a class="nav-cta" href="apply.html">과정 신청</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero courses">
+      <div class="container page-title">
+        <p class="eyebrow">Apply</p>
+        <h1>과정 신청</h1>
+        <p>관심 과정을 남겨주시면 확인 후 안내 연락을 드리는 정적 페이지용 신청 화면입니다.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-layout">
+        <form class="panel form" action="#" method="post">
+          <div class="field">
+            <label for="course">신청 과정</label>
+            <select id="course" name="course">
+              <option>AI 위치기반 앱 개발자 양성</option>
+              <option>웹 풀스택 개발 기초</option>
+              <option>컴퓨터활용능력·ITQ</option>
+              <option>상담 후 결정</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="name">이름</label>
+            <input id="name" name="name" type="text" placeholder="홍길동">
+          </div>
+          <div class="field">
+            <label for="phone">연락처</label>
+            <input id="phone" name="phone" type="tel" placeholder="010-0000-0000">
+          </div>
+          <div class="field">
+            <label for="message">궁금한 내용</label>
+            <textarea id="message" name="message" placeholder="수강 가능 시간, 국비지원 여부, 진로 고민 등을 적어주세요."></textarea>
+          </div>
+          <button class="button primary" type="submit">신청 내용 보내기</button>
+        </form>
+
+        <aside class="panel">
+          <h2>빠른 안내</h2>
+          <p class="notice">이 페이지는 정적 HTML 시안입니다. 실제 접수 기능은 서버, 폼 서비스, 카카오채널, 이메일 연동 중 하나로 연결하면 됩니다.</p>
+          <div class="meta">
+            <span>전화: 062-413-1600</span>
+            <span>이메일: itgwangju@gmail.com</span>
+            <span>방문: 광주 광산구 사암로340번길 31 부광빌딩 5층</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div><strong>광주컴퓨터기술학원</strong><br>광주 광산구 사암로340번길 31 부광빌딩 5층</div>
+      <div>교육문의 062-413-1600<br>itgwangju@gmail.com</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
